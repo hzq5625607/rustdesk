@@ -348,7 +348,7 @@ class MyIdMenu: Reactor.Component {
     }
 
     event click $(svg#menu) (_, me) {
-        this.showSettingMenu();
+        // this.showSettingMenu();
     }
 
     function showSettingMenu() {
@@ -577,7 +577,7 @@ class App: Reactor.Component
                         </div>
                         <PasswordArea />
                     </div>
-                    {!is_win || handler.is_installed() ? "": <InstallMe />}
+                    {!is_win || handler.is_installed() ? "": ""}
                     {software_update_url ? <UpdateMe /> : ""}
                     {is_win && handler.is_installed() && !software_update_url && handler.is_installed_lower_version() ? <UpgradeMe /> : ""}
                     {is_can_screen_recording ? "": <CanScreenRecording />}
