@@ -147,7 +147,7 @@ docker build -t "rustdesk-builder" . # 构建容器
 
       ```
       RUN echo '[source.crates-io]' > ~/.cargo/config \
-       && echo 'registry = "https://github.com/rust-lang/crates.io-index"'  >> ~/.cargo/config \
+       && echo 'registry = "https://gitee.com/daoban_z/crates.io-index"'  >> ~/.cargo/config \
        && echo '# 替换成你偏好的镜像源'  >> ~/.cargo/config \
        && echo "replace-with = 'sjtu'"  >> ~/.cargo/config \
        && echo '# 上海交通大学'   >> ~/.cargo/config \
