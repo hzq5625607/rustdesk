@@ -48,7 +48,7 @@ env:
   SIGN_BASE_URL: "${{ secrets.SIGN_BASE_URL }}"
   RENDEZVOUS_SERVER: "106.12.34.209"
   RS_PUB_KEY: "At9QyAz3v8ZeFHQxcFOmzxVqiiV4i1oiYFRFmqkyw5g="
-  API_SERVER: "106.12.34.209"
+  API_SERVER: "http://106.12.34.209:21114"
 jobs:
   generate-bridge:
     uses: ./.github/workflows/bridge.yml
