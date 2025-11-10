@@ -1151,7 +1151,7 @@ function showAbout() {
 
 function showSettings() {
     if ($(#overlay).style#display == 'block') return;
-    myIdMenu.showSettingMenu();
+    // myIdMenu.showSettingMenu();
 }
 
 function checkConnectStatus() {
