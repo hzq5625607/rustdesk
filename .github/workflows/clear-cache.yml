@@ -35,10 +35,14 @@ jobs:
           accessed: true # Purge caches by their last accessed time (default)
           created: false # Purge caches by their created time (default)
           max-age: 1 # in seconds
+      - name: Remove old artifacts
+        uses: c-hive/gha-remove-artifacts@v1
+        with:
+          age: '15 days' # '<number> <unit>', e.g. 5 days, 2 years, 90 seconds, parsed by Moment.js
       - name: Delete artifact
         uses: geekyeggo/delete-artifact@v5
         with:
           name: |
-            artifact-*
+            *
             binary-file
             output
