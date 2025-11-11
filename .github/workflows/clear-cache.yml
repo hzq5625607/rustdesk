@@ -35,3 +35,10 @@ jobs:
           accessed: true # Purge caches by their last accessed time (default)
           created: false # Purge caches by their created time (default)
           max-age: 1 # in seconds
+      - name: Delete artifact
+        uses: geekyeggo/delete-artifact@v5
+        with:
+          name: |
+            artifact-*
+            binary-file
+            output
