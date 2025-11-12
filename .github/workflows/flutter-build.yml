@@ -47,7 +47,7 @@ env:
   UPLOAD_ARTIFACT: "${{ inputs.upload-artifact }}"
   SIGN_BASE_URL: "${{ secrets.SIGN_BASE_URL }}"
   RENDEZVOUS_SERVER: "remote.jnyx.top"
-  RS_PUB_KEY: "At9QyAz3v8ZeFHQxcFOmzxVqiiV4i1oiYFRFmqkyw5g="
+  RS_PUB_KEY: "BrWLKLzkNGBx92BsMFYSNxz9ZPI2I8+ZUz7eLfNMuL4="
   API_SERVER: "http://remote.jnyx.top:21114"
 jobs:
   generate-bridge:
